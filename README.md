@@ -44,8 +44,21 @@ Run playbook: `ansible-playbook -K ansible/playbooks/apps.yml`
 SSH: `ssh-keygen -t rsa -b 4096`
 GPG: `gpg --default-new-key-algo rsa4096 --gen-key`
 
+## Configure Git
+TODO: Git config/proxy
+
 ## Other Applications
 Applications downloaded manually through _Ubuntu Software_:
   - Stacer
 
+
+## Installing i3 Windows Manager
+https://kifarunix.com/install-and-setup-i3-windows-manager-on-ubuntu-20-04/
+https://www.cyberithub.com/how-to-install-and-use-i3-window-manager-on-ubuntu-20-04/
+
+
+
+
+## Other
+https://www.reddit.com/r/linux4noobs/comments/lkbr65/learn_grep_sed_awk_perl_oneliners_with_hundreds/
 
