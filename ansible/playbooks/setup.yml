@@ -1,0 +1,42 @@
+---
+- name: Install initial packages
+  hosts: localhost
+  connection: local
+  become: yes
+
+  tasks:
+    - name: Install apt packages
+      apt:
+        name:
+          - gcc
+          - g++
+          - curl
+          - ca-certificates
+          - apt-transport-https 
+          - gnupg
+          - xclip
+          - default-jre
+          - default-jdk
+          - nodejs
+          - python3-pip
+          - git
+          - docker.io
+          - docker-compose
+          - awscli
+        state: present
+        update_cache: yes
+
+    - name: Install Azure CLI
+      shell: curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+
+    - name: Add Terraform repository
+      shell: >-
+        curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add - 
+        && sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+
+    - name: Install Terraform
+      apt:
+        name:
+          - terraform
+        state: present
+        update_cache: yes

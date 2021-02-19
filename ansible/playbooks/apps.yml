@@ -1,0 +1,27 @@
+---
+- name: Install personalised applications
+  hosts: localhost
+  connection: local
+  become: yes
+
+  tasks:
+    - name: Install VSCode
+      snap:
+        name:
+          - code
+        classic: yes
+
+    - name: Install Slack
+      snap:
+        name:
+          - slack
+        classic: yes
+
+    - name: Install Other (non-classic)
+      snap:
+        name:
+          - brave
+          - vlc
+          - discord
+          - spotify
+
