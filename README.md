@@ -24,6 +24,7 @@ The playbook `ansible/playbooks/setup.yml` installs the following:
   - ca-certificates
   - apt-transport-https 
   - gnupg
+  - python3-venv
 
 Run playbook: `ansible-playbook -K ansible/playbooks/setup.yml`
 
@@ -45,18 +46,19 @@ SSH: `ssh-keygen -t rsa -b 4096`
 GPG: `gpg --default-new-key-algo rsa4096 --gen-key`
 
 ## Configure Git
-TODO: Git config/proxy
+Move the config file into home directory
 
 ## Other Applications
 Applications downloaded manually through _Ubuntu Software_:
   - Stacer
 
+Applications downloaded manually:
+  - [ExpressVPN](https://www.expressvpn.com/support/vpn-setup/app-for-linux/)
+
 
 ## Installing i3 Windows Manager
 https://kifarunix.com/install-and-setup-i3-windows-manager-on-ubuntu-20-04/
 https://www.cyberithub.com/how-to-install-and-use-i3-window-manager-on-ubuntu-20-04/
-
-
 
 
 ## Other
