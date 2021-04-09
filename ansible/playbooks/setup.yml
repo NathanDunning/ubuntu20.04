@@ -12,9 +12,10 @@
           - g++
           - curl
           - ca-certificates
-          - apt-transport-https 
+          - apt-transport-https
           - gnupg
           - xclip
+          - fzf
           - default-jre
           - default-jdk
           - nodejs
