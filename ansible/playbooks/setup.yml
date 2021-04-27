@@ -19,6 +19,7 @@
           - default-jre
           - default-jdk
           - nodejs
+          - npm
           - python3-pip
           - git
           - docker.io
