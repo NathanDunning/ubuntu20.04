@@ -1,3 +1,11 @@
 [user]
 	email = dunningn@gmail.com
 	name = Nathan Dunning
+[core]
+        editor = vim
+[fetch]
+        prune = true
+[branch]
+        autosetuprebase = always
+[pull]
+        rebase = true
